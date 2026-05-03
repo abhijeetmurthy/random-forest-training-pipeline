@@ -9,10 +9,14 @@ Enterprise-style ML repository for decision tree/random forest experimentation w
 - `scripts/run_pipeline.sh`: shell entrypoint.
 - `configs/`, `docs/`: operational scaffolding.
 
+## Optimization
+- Uses `polars` for fast CSV profiling when available.
+- Falls back to stdlib `csv` automatically if `polars` is missing.
+
 ## Quickstart
 ```bash
+python3 -m pip install -r requirements.txt
 ./scripts/bootstrap.sh
-python3 -m pip install pandas
 ./scripts/run_pipeline.sh
 ```
 

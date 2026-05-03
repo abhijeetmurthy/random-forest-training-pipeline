@@ -1,0 +1,2 @@
+# Preferred fast dataframe engine.
+polars>=1.0
